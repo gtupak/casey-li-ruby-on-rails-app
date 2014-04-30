@@ -1,12 +1,14 @@
 <div class="news-post">
-	<div class="title">
+	<div class="title" news_post_id="<%= news_post.id %>">
 		<%= news_post.title %>	
 	</div>
+	
 	<div class="body">
-		<%= news_post.body %>
+
 	</div>
 
 	<% if admin? %>
+
 	<div class="actions">
 		<%= link_to "edit", 
             edit_news_post_path(news_post) %>

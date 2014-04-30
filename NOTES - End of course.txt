@@ -1,0 +1,52 @@
+NOTES --- END OF COURSE
+-----------------------
+
+- To keep up your website running on heroku, use NewRelic to keep pinging your site.
+
+- Top 10 vulnerabilities in WEB dev: google : "OWASP Top 10"
+
+
+WHAT WE COVERED
+---------------
+
+- Ruby programming
+- SQL Databases
+- CSS and SCSS
+- HTML
+- Rails programming
+- Javascript & JQUERY
+
+
+WHERE TO GO FROM HERE
+---------------------
+
+- More in depth tutorial: www.railstutorial.org/book
+
+- Ruby on rails guides: guides.rubyonrails.org
+
+Begginer stuff that you HAVE to learn:
+
+- Active record associations
+- Active record validations
+- Database migrations
+- Routing
+- Automated testing (Book: everyday Rails Tesing... by Aaron Sumner)
+
+
+Notes
+-----
+
+{
+DON’T WORRY ABOUT DOING IT RIGHT AND DON’T LET THE THOUGHT OF DOING IT WRONG PARALYZE YOU.
+
+IT’S BETTER TO JUST DO IT AND EVENTUALLY DEVELOP AN YOUR OWN OPINION ABOUT IT THEN TO HAVE SOMEONE TELL YOU THAT ‘THIS IS THE WAY TO DO IT’.
+
+RAILS HAS THIS BUILT IN BECUASE MOST OF THE TIME ‘THE RIGHT WAY TO DO IT’ IS THE SHORTEST WAY TO DO IT
+}
+
+- Startup weekend (www.startupweeking.org)
+	http://www.eventbrite.com/e/startup-weekend-ottawa-06062014-tickets-10846623543?aff=es2&rank=82
+
+	
+
+

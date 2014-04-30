@@ -4,10 +4,21 @@ class NewsPostsController < ApplicationController
 
   def index
   	@news_posts = NewsPost.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @news_posts }
+      # format.xml { render xml: @news_posts }
+    end      
   end
 
   def show
   	@news_post = NewsPost.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @news_post }
+    end
   end
 
   def new

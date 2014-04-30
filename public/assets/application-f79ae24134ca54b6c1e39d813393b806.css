@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* Layout Styling */
+body {
+  margin: 0;
+  background: #222222; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+/* Header Styling */
+.header {
+  background: #bde3ff; }
+
+/* Navigation Styling */
+.navigation {
+  background: black;
+  color: white; }
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white; }
+  .nav-link:hover {
+    background: #ccc;
+    color: black; }
+  .nav-link:visited {
+    color: white; }
+
+/* Content Styling */
+.content {
+  background: #eeeeee; }
+  .content h1 {
+    margin-top: 0; }
+
+/* Footer Styling */
+.footer {
+  background: #222222;
+  color: white; }
+
+/* Conact modal */
+.contact-modal-dialog-bg {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%; }
+
+.contact-modal-dialog {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  background: #888;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 20px auto 0 auto; }
+.news-posts .news-post {
+  margin: 20px 0; }
+  .news-posts .news-post .title {
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.5em; }
+  .news-posts .news-post .body {
+    background: #ddd;
+    padding: 5px; }
+  .news-posts .news-post .actions {
+    background: #777;
+    padding: 5px; }
+    .news-posts .news-post .actions a {
+      color: black;
+      text-decoration: none; }
+/* ABOUT PAGE */
+#link-results {
+  width: 50%;
+  padding: 30px 50px;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  display: none; }

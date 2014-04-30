@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyFirstApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>MyFirstApp</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+
+	<div class="contact-modal-dialog-bg" style="display:none">
+		<div class="contact-modal-dialog">
+			CONTACT
+
+			<div class="field">
+				<%= label_tag :contact_first_name, "First Name" %><br>
+				<%= text_field_tag :contact_first_name %>
+			</div>
+
+			<div class="field">
+				<%= label_tag :contact_last_name, "Last Name" %><br>
+				<%= text_field_tag :contact_last_name %>
+			</div>
+
+			<div class="field">
+				<%= label_tag :contact_email, "Email" %><br>
+				<%= text_field_tag :contact_email %>
+			</div>
+
+			<div class="field">
+				<%= label_tag :contact_message, "Message" %><br>
+				<%= text_field_tag :contact_message %>
+			</div>
+
+			<div class="field">
+			<%= link_to "Submit", "#", class: "contact-submit-link" %>
+			</div>
+		</div> 
+	</div>
 
 	<div class="header" id="header">
 		<div class="container" id="header-container">
@@ -18,19 +48,19 @@
 		<div class="container">
 			<%= link_to "Home", root_path, class: "nav-link" %>
 			<%= link_to "News", news_posts_path, class: "nav-link" %>
-			<%= link_to "Contact", contact_path, class: "nav-link" %>
+			<%= link_to "Contact", contact_path, class: "nav-link contact-link" %>
 			<%= link_to "About", about_path, class: "nav-link" %>
 
 			<% unless user_signed_in? %>
-				<%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
+			<%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
 			<% else %>
-				<%= link_to "Sign Out", destroy_user_session_path, 
-										method: :delete, 
-										class: "nav-link" %>
+			<%= link_to "Sign Out", destroy_user_session_path, 
+			method: :delete, 
+			class: "nav-link" %>
 
-				<%= "Signed in as #{current_user.email}" %>						
+			<%= "Signed in as #{current_user.email}" %>						
 			<% end %>
-		
+
 
 		</div>
 	</div>

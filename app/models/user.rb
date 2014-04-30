@@ -29,8 +29,8 @@ def is_role?(role)
 	roles.to_a.include?(role)
 end
 
-def is_role_by_name(role_name)
-	role Role.find_by(name: role_name)
+def is_role_by_name?(role_name)
+	role = Role.find_by(name: role_name)
 	is_role?(role)
 end
 
